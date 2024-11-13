@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/8f12b4f0-a894-4d5b-9c36-5ba391c63fbe/44355e66-dbf8-4dd8-ba6b-8e9e32ec6abd/IN-en-20230320-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.667);
+}
+
+header{
+    height: 10vh;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container > img {
+    width: 10%;
+    height: 5vh;
+    position: relative;
+    right: 150px;
+}
+
+.container > .buttons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 200px;
+}
+
+.container > .buttons > .btn {
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*The line you provided is using SCSS (Sassy CSS), which allows nesting of selectors.
+/* .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    & > img{
+        width: 10%;
+        height: 5vh;
+        position: relative;
+        right: 150px;
+    }
+
+    & > .buttons{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        left: 200px;
+        
+               
+    & > .btn{
+        height: 30px;
+        width: 70px;
+        border-radius: 8px;
+        border: none;
+        background-color: red;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+} */
+
+.hero{
+    width: 1200px;
+    margin: auto;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.6;
+
+    & > h1{
+        font-size: 3.5rem;
+    }
+
+    &> p{
+        font-size: 1.5rem;
+    }
+}
